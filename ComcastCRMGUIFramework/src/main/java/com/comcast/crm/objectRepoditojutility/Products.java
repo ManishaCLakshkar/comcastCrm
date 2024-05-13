@@ -10,4 +10,7 @@ public class Products {
 	@FindBy(name="search")
 	private WebDriver ele2;
 
+	@FindBy(xpath="//input[@name='search_text']")
+	private WebDriver ele3;
+
 }
