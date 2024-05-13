@@ -16,6 +16,9 @@ public class HomePage {
 	}
 	
 	
+	@FindBy(linkText= "Products")
+	private WebElement productsLink;
+
 	@FindBy(linkText= "Organizations")
 	private WebElement orgLink;
 	
@@ -33,6 +36,11 @@ public class HomePage {
 	
 	@FindBy(linkText="Sign Out")
 	private WebElement signOutLink;
+	
+	public WebElement getProductsLink() {
+		return productsLink;
+	}
+
 
 	public WebElement getOrgLink() {
 		return orgLink;
